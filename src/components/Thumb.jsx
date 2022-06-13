@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Thumb = ({ data }) => {
   const navigate = useNavigate();
   const handleRoute = () => {
-    navigate(`/pokemon/${data.id}`, { state: { data } });
+    navigate(`/pokemon/${data.name}`, { state: { data } });
   };
 
   return (

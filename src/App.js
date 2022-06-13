@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<All />} />
-      <Route path="/pokemon/:pokemon" element={<Card />} />
+      <Route path="/pokemon/:name" element={<Card />} />
 
       <Route path="/404" element={<Missing />} />
       <Route path="*" element={<Navigate replace to="/404" />} />
